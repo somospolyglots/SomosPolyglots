@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Free Trial — Somos Polyglots</title>
+<meta name="description" content="Book a free trial class or get in touch with Somos Polyglots.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/logo.png" alt="Somos Polyglots logo"> Somos Polyglots</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="events.html">Events</a>
+      <a href="community.html">Community</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary">Log in</a>
+      <a href="contact.html#trial" class="btn btn-primary">Book a free trial</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's get you talking</h1>
+      <p>Book a free trial class below, or send us a message about courses, events, or anything else.</p>
+    </div>
+  </section>
+
+  <section id="trial">
+    <div class="container hero-grid" style="align-items:flex-start;">
+      <div class="card">
+        <h2 style="font-size:1.4rem;">Book a free trial class</h2>
+        <p style="color:var(--ink-soft);">30 minutes, live, with a real teacher. No card required.</p>
+        <form name="trial-request" method="POST" data-netlify="true" action="/thanks.html" class="form-grid">
+          <input type="hidden" name="form-name" value="trial-request">
+          <div>
+            <label for="t-name">Name</label>
+            <input id="t-name" name="name" type="text" required placeholder="Your full name">
+          </div>
+          <div>
+            <label for="t-email">Email</label>
+            <input id="t-email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="t-lang">Language you want to learn</label>
+            <select id="t-lang" name="language" required>
+              <option value="">Select a language</option>
+              <option>English</option>
+              <option>Spanish</option>
+              <option>Portuguese</option>
+              <option>Chinese</option>
+              <option>Russian</option>
+              <option>Korean</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-level">Current level</label>
+            <select id="t-level" name="level">
+              <option>Complete beginner</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-time">Preferred day/time</label>
+            <input id="t-time" name="preferred_time" type="text" placeholder="e.g. Weekday evenings (your timezone)">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Request my free trial</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2 style="font-size:1.4rem;">General inquiries</h2>
+        <p style="color:var(--ink-soft);">Questions about courses, events, the shop, or partnerships.</p>
+        <form name="general-inquiry" method="POST" data-netlify="true" action="/thanks.html" class="form-grid">
+          <input type="hidden" name="form-name" value="general-inquiry">
+          <div>
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" required placeholder="Your full name">
+          </div>
+          <div>
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="c-topic">Topic</label>
+            <select id="c-topic" name="topic">
+              <option>Courses</option>
+              <option>Events</option>
+              <option>Shop / materials</option>
+              <option>Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="4" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-block">Send message</button>
+        </form>
+
+        <div style="margin-top:28px;border-top:1px solid var(--line);padding-top:20px;">
+          <p style="margin:0 0 6px;"><strong>Email:</strong> <a href="mailto:somospolyglots@gmail.com" style="color:var(--coral);font-weight:600;">somospolyglots@gmail.com</a></p>
+          <p style="margin:0;"><strong>Social:</strong>
+            <a href="https://www.instagram.com/somospolyglots?igsh=eHNxNXNidjRsMmFp" target="_blank" rel="noopener" style="display:inline;color:var(--coral);font-weight:600;">Instagram</a> ·
+            <a href="https://t.me/somospolyglots" target="_blank" rel="noopener" style="display:inline;color:var(--coral);font-weight:600;">Telegram</a> ·
+            <a href="https://www.tiktok.com/@somospolyglots?_r=1&_t=ZG-97c3rsWpnvc" target="_blank" rel="noopener" style="display:inline;color:var(--coral);font-weight:600;">TikTok</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#fff;border-top:1px solid var(--line);">
+    <div class="container">
+      <div class="strip">
+        <div>
+          <h2>Get event updates by email</h2>
+          <p>Speaking circles, exchange nights and challenges — straight to your inbox.</p>
+        </div>
+        <form name="newsletter" method="POST" data-netlify="true" action="/thanks.html" style="display:flex;gap:10px;flex-wrap:wrap;">
+          <input type="hidden" name="form-name" value="newsletter">
+          <input type="email" name="email" required placeholder="you@example.com" style="min-width:220px;border-radius:999px;">
+          <button type="submit" class="btn btn-light">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo.png" alt="Somos Polyglots"><span>Somos Polyglots</span></div>
+        <p style="max-width:280px;font-size:.92rem;">An online language academy: courses, live events and a community built around one habit — speaking out loud.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="courses.html">Courses</a>
+        <a href="events.html">Events</a>
+        <a href="community.html">Community</a>
+        <a href="shop.html">Shop</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="about.html">Our story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/somospolyglots?igsh=eHNxNXNidjRsMmFp" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://t.me/somospolyglots" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.tiktok.com/@somospolyglots?_r=1&_t=ZG-97c3rsWpnvc" target="_blank" rel="noopener">TikTok</a>
+        <a href="mailto:somospolyglots@gmail.com">Email us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Somos Polyglots. All rights reserved.</span>
+      <span>Made for learners who'd rather talk than translate.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
